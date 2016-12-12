@@ -1,5 +1,0 @@
-<templateSet group="PHP">
-  <template name="test" value="asdf" description="test" toReformat="false" toShortenFQNames="true">
-    <context />
-  </template>
-</templateSet>
