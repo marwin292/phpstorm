@@ -1,0 +1,9 @@
+<templateSet group="PHP">
+  <template name="restdelete" value="/**&#10; * Remove $VARIABLE$ from event.&#10; *&#10; * @ApiDoc(&#10; *   resource = true,&#10; *   description = &quot;Remove $VARIABLE$ from event.&quot;,&#10; *   output = &quot;Sogabu\EventBundle\Entity\$ENTITY$&quot;,&#10; *   statusCodes = {&#10; *     200 = &quot;Returned when successful&quot;,&#10; *     404 = &quot;Returned when the $VARIABLE$ is not found&quot;&#10; *   }&#10; * )&#10; *&#10; * @Annotations\View(&#10; *      serializerEnableMaxDepthChecks=true&#10; * )&#10; *&#10; * @param BaseEvent $event&#10; * @param $ENTITY$ $$$VARIABLE$&#10; *&#10; * @return \Symfony\Component\HttpFoundation\Response&#10; */&#10;public function delete$ENTITY$Action(BaseEvent $event, $ENTITY$ $$$VARIABLE$)&#10;{&#10;    $em = $this-&gt;getDoctrine()-&gt;getManager();&#10;    $em-&gt;remove($invitation);&#10;    $em-&gt;flush();&#10;&#10;    return $this-&gt;forward('SogabuCoreBundle:Api/$ENTITY$:get$ENTITY$', ['$VARIABLE' =&gt; $$$VARIABLE$-&gt;getId()]);&#10;}&#10;" description="REST delete" toReformat="false" toShortenFQNames="true">
+    <variable name="ENTITY" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="VARIABLE" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+</templateSet>
