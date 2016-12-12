@@ -1091,6 +1091,74 @@
           <option name="key" value="wt" />
         </TemplateKey>
         <TemplateKey>
+          <option name="groupName" value="Angular2 TypeScript Live Templates" />
+          <option name="key" value="ng2-component" />
+        </TemplateKey>
+        <TemplateKey>
+          <option name="groupName" value="Angular2 TypeScript Live Templates" />
+          <option name="key" value="ng2-service" />
+        </TemplateKey>
+        <TemplateKey>
+          <option name="groupName" value="Angular2 TypeScript Live Templates" />
+          <option name="key" value="ng2-pipe" />
+        </TemplateKey>
+        <TemplateKey>
+          <option name="groupName" value="Angular2 TypeScript Live Templates" />
+          <option name="key" value="ng2-routing" />
+        </TemplateKey>
+        <TemplateKey>
+          <option name="groupName" value="Angular2 TypeScript Live Templates" />
+          <option name="key" value="ng2-http-get" />
+        </TemplateKey>
+        <TemplateKey>
+          <option name="groupName" value="Angular2 TypeScript Live Templates" />
+          <option name="key" value="ng2-subscribe" />
+        </TemplateKey>
+        <TemplateKey>
+          <option name="groupName" value="Angular2 TypeScript Live Templates" />
+          <option name="key" value="ng2-bootstrap" />
+        </TemplateKey>
+        <TemplateKey>
+          <option name="groupName" value="Angular2 TypeScript Live Templates" />
+          <option name="key" value="ng2-component-root" />
+        </TemplateKey>
+        <TemplateKey>
+          <option name="groupName" value="Angular2 TypeScript Live Templates" />
+          <option name="key" value="ng2-module-root" />
+        </TemplateKey>
+        <TemplateKey>
+          <option name="groupName" value="Angular2 TypeScript Live Templates" />
+          <option name="key" value="ng2-module" />
+        </TemplateKey>
+        <TemplateKey>
+          <option name="groupName" value="Angular2 TypeScript Live Templates" />
+          <option name="key" value="ng2-ngClass" />
+        </TemplateKey>
+        <TemplateKey>
+          <option name="groupName" value="Angular2 TypeScript Live Templates" />
+          <option name="key" value="ng2-ngFor" />
+        </TemplateKey>
+        <TemplateKey>
+          <option name="groupName" value="Angular2 TypeScript Live Templates" />
+          <option name="key" value="ng2-ngIf" />
+        </TemplateKey>
+        <TemplateKey>
+          <option name="groupName" value="Angular2 TypeScript Live Templates" />
+          <option name="key" value="ng2-ngModel" />
+        </TemplateKey>
+        <TemplateKey>
+          <option name="groupName" value="Angular2 TypeScript Live Templates" />
+          <option name="key" value="ng2-routerLink" />
+        </TemplateKey>
+        <TemplateKey>
+          <option name="groupName" value="Angular2 TypeScript Live Templates" />
+          <option name="key" value="ng2-ngStyle" />
+        </TemplateKey>
+        <TemplateKey>
+          <option name="groupName" value="Angular2 TypeScript Live Templates" />
+          <option name="key" value="ng2-ngSwitch" />
+        </TemplateKey>
+        <TemplateKey>
           <option name="groupName" value="Zen CSS" />
           <option name="key" value="@i" />
         </TemplateKey>
@@ -3821,6 +3889,30 @@
         <TemplateKey>
           <option name="groupName" value="Angular2" />
           <option name="key" value="ng2-routerLink" />
+        </TemplateKey>
+        <TemplateKey>
+          <option name="groupName" value="Angular Templates" />
+          <option name="key" value="@controller iife" />
+        </TemplateKey>
+        <TemplateKey>
+          <option name="groupName" value="Angular Templates" />
+          <option name="key" value="@iife" />
+        </TemplateKey>
+        <TemplateKey>
+          <option name="groupName" value="Angular Templates" />
+          <option name="key" value="@directive iife" />
+        </TemplateKey>
+        <TemplateKey>
+          <option name="groupName" value="Angular Templates" />
+          <option name="key" value="@factory iife" />
+        </TemplateKey>
+        <TemplateKey>
+          <option name="groupName" value="Angular Templates" />
+          <option name="key" value="@service iife" />
+        </TemplateKey>
+        <TemplateKey>
+          <option name="groupName" value="Angular Templates" />
+          <option name="key" value="@provider iife" />
         </TemplateKey>
         <TemplateKey>
           <option name="groupName" value="SQL" />
