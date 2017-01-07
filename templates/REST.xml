@@ -12,4 +12,11 @@
       <option name="PHP" value="true" />
     </context>
   </template>
+  <template name="restget" value="/**&#10; * Get single $ENTITY$.&#10; *&#10; * @ApiDoc(&#10; *   resource = true,&#10; *   description = &quot;Gets a $ENTITY$ entity for a given id&quot;,&#10; *   output = &quot;$ENTITY$&quot;,&#10; *   statusCodes = {&#10; *     200 = &quot;Returned when successful&quot;,&#10; *     404 = &quot;Returned when the $ENTITY$ entity is not found&quot;&#10; *   }&#10; * )&#10; *&#10; * @Annotations\View(&#10; *   serializerEnableMaxDepthChecks=true&#10; * )&#10; *&#10; * @param $ENTITY$ $VARIABLE$&#10; *&#10; * @return $ENTITY$&#10; */&#10;public function get$ENTITY$Action($ENTITY$ $VARIABLE$)&#10;{&#10;    return $VARIABLE$;&#10;}&#10;" description="rest get entity" toReformat="false" toShortenFQNames="true">
+    <variable name="ENTITY" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="VARIABLE" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
 </templateSet>
