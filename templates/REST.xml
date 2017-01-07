@@ -1,0 +1,15 @@
+<templateSet group="REST">
+  <template name="restgetc" value="/**&#10; * List all $ENTITY$ entities.&#10; *&#10; * @ApiDoc(&#10; *   resource = true,&#10; *   output = &quot;array&lt;$ENTITY$&gt;&quot;,&#10; *   statusCodes = {&#10; *     200 = &quot;Returned when successful&quot;&#10; *   }&#10; * )&#10; *&#10; * @Annotations\QueryParam(name=&quot;offset&quot;, requirements=&quot;\d+&quot;, nullable=true, description=&quot;Offset from which to start listing $ENTITY$ entities.&quot;)&#10; * @Annotations\QueryParam(name=&quot;limit&quot;, requirements=&quot;\d+&quot;, default=&quot;10&quot;, description=&quot;How many $ENTITY$ entities to return.&quot;)&#10; *&#10; * @Annotations\View(&#10; *   serializerEnableMaxDepthChecks=true&#10; * )&#10; *&#10; * @param ParamFetcherInterface $paramFetcher param fetcher service&#10; *&#10; * @return $ENTITY$[]&#10; */&#10;public function getEventsAction(ParamFetcherInterface $paramFetcher)&#10;{&#10;    $offset = $paramFetcher-&gt;get('offset');&#10;    $offset = null == $offset ? 0 : $offset;&#10;    $limit = $paramFetcher-&gt;get('limit');&#10;&#10;    return $this-&gt;getDoctrine()-&gt;getRepository('SogabuEventBundle:BaseEvent')-&gt;findBy([], ['createdAt' =&gt; 'DESC'], $limit, $offset);&#10;}&#10;" description="rest get list" toReformat="false" toShortenFQNames="true">
+    <variable name="ENTITY" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="restpost" value="&#10;/**&#10; * Creates a new $ENTITY$ entity.&#10; *&#10; * @ApiDoc(&#10; *   resource = true,&#10; *   description = &quot;Creates a new $ENTITY$ from the submitted data.&quot;,&#10; *   input = &quot;$ENTITY$&quot;,&#10; *   statusCodes = {&#10; *     200 = &quot;Returned when successful&quot;,&#10; *     400 = &quot;Returned when the form has errors&quot;&#10; *   }&#10; * )&#10; *&#10; * @param Request $request the request object&#10; *&#10; * @return RedirectResponse&#10; */&#10;public function post$ENTITY$Action(Request $request)&#10;{&#10;    /** @var $ENTITY$ $VARIABLE$ */&#10;    $VARIABLE$ = $this-&gt;getDoctrine()-&gt;getRepository('AppBundle:$ENTITY$')-&gt;createNew();&#10;    $form = $this-&gt;createForm($ENTITY$Type::class, $VARIABLE$);&#10;    $form-&gt;handleRequest($request);&#10;&#10;    if ($form-&gt;isSubmitted() &amp;&amp; $form-&gt;isValid()) {&#10;        $this-&gt;manager-&gt;save($VARIABLE$);&#10;&#10;        return $this-&gt;forward('AppBundle:Api/$ENTITY$:get$ENTITY$', ['id' =&gt; $VARIABLE$-&gt;getId(), '_format' =&gt; 'json']);&#10;    }&#10;&#10;    return $form;&#10;}" description="reset post entity" toReformat="false" toShortenFQNames="true">
+    <variable name="ENTITY" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="VARIABLE" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+</templateSet>
