@@ -1,6 +1,7 @@
 <application>
   <component name="FileTypeManager" version="17">
     <extensionMap>
+      <mapping pattern="accommodations" type="PLAIN_TEXT" />
       <mapping pattern="procedures" type="PLAIN_TEXT" />
       <mapping pattern="reservation-detail" type="PLAIN_TEXT" />
       <mapping pattern="test" type="PLAIN_TEXT" />
