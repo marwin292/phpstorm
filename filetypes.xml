@@ -2,15 +2,16 @@
   <component name="FileTypeManager" version="17">
     <extensionMap>
       <mapping pattern="accommodations" type="PLAIN_TEXT" />
+      <mapping pattern="procedures" type="PLAIN_TEXT" />
+      <mapping pattern="reservation-detail" type="PLAIN_TEXT" />
+      <mapping pattern="card-name" type="PLAIN_TEXT" />
+      <mapping pattern="Dockerfile" type="PLAIN_TEXT" />
       <mapping pattern="test" type="PLAIN_TEXT" />
       <mapping pattern="SogabuSelector" type="PLAIN_TEXT" />
-      <mapping pattern="Dockerfile" type="PLAIN_TEXT" />
-      <mapping pattern="procedures" type="PLAIN_TEXT" />
-      <mapping pattern="card-name" type="PLAIN_TEXT" />
-      <mapping pattern="reservation-detail" type="PLAIN_TEXT" />
       <mapping ext="bro" type="PLAIN_TEXT" />
       <mapping ext="plist" type="PLAIN_TEXT" />
       <mapping ext="iptc" type="PLAIN_TEXT" />
+      <mapping ext="orig" type="PLAIN_TEXT" />
       <mapping ext="ejs" type="PLAIN_TEXT" />
     </extensionMap>
   </component>
