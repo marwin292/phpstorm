@@ -6,6 +6,7 @@
       <mapping pattern="procedures" type="PLAIN_TEXT" />
       <mapping pattern="accommodations" type="PLAIN_TEXT" />
       <mapping pattern="card-name" type="PLAIN_TEXT" />
+      <mapping pattern="produkty" type="PLAIN_TEXT" />
       <mapping pattern="reservation-detail" type="PLAIN_TEXT" />
       <mapping ext="bro" type="PLAIN_TEXT" />
       <mapping ext="plist" type="PLAIN_TEXT" />
